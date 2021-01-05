@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Continent" representedClassName=".Continent" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" defaultDateTimeInterval="630984660" usesScalarValueType="NO"/>
+        <relationship name="countries" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Country" inverseName="continent" inverseEntity="Country"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" attributeType="Date" defaultDateTimeInterval="630984660" usesScalarValueType="NO"/>
+        <relationship name="continent" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Continent" inverseName="countries" inverseEntity="Continent"/>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="Continent" positionX="0" positionY="45" width="128" height="88"/>
+    </elements>
+</model>
