@@ -14,8 +14,17 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		917DC5EF25A567F30098651C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917DC5EE25A567F30098651C /* WidgetKit.framework */; };
+		917DC5F125A567F30098651C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917DC5F025A567F30098651C /* SwiftUI.framework */; };
+		917DC5F425A567F30098651C /* GroupDataDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917DC5F325A567F30098651C /* GroupDataDisplay.swift */; };
+		917DC5F725A567F40098651C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917DC5F625A567F40098651C /* Assets.xcassets */; };
+		917DC5F925A567F40098651C /* GroupDataDisplay.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */; };
+		917DC5FA25A567F40098651C /* GroupDataDisplay.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */; };
+		917DC5FD25A567F40098651C /* GroupDataDisplayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917DC5ED25A567F30098651C /* GroupDataDisplayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		917DC60525A5681A0098651C /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F09C25A4653600DF335B /* Database.xcdatamodeld */; };
 		91C4F09E25A4653600DF335B /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F09C25A4653600DF335B /* Database.xcdatamodeld */; };
 		91C4F0A225A469DB00DF335B /* CoreDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F0A125A469DB00DF335B /* CoreDataDataSource.swift */; };
+		D954E510F4438386385FE156 /* Pods_GroupDataDisplayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1429137C57B981D2F017B5 /* Pods_GroupDataDisplayExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +35,31 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = LLCoreData;
 		};
+		917DC5FB25A567F40098651C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917DC5EC25A567F30098651C;
+			remoteInfo = GroupDataDisplayExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		917DC60125A567F40098651C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				917DC5FD25A567F40098651C /* GroupDataDisplayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		27A0BB69263B89C65BCC3488 /* Pods-GroupDataDisplayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupDataDisplayExtension.debug.xcconfig"; path = "Target Support Files/Pods-GroupDataDisplayExtension/Pods-GroupDataDisplayExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LLCoreData_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLCoreData_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,13 +70,23 @@
 		607FACE51AFB9204008FA782 /* LLCoreData_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLCoreData_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6393FF436E43D7B956EE8FBC /* Pods-GroupDataDisplayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupDataDisplayExtension.release.xcconfig"; path = "Target Support Files/Pods-GroupDataDisplayExtension/Pods-GroupDataDisplayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		6BE5D125DAD7C76E558E1C5E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7115D8DB204DEF7963BF8482 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		917DC5E625A567590098651C /* LLCoreData_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LLCoreData_Example.entitlements; sourceTree = "<group>"; };
+		917DC5ED25A567F30098651C /* GroupDataDisplayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GroupDataDisplayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		917DC5EE25A567F30098651C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		917DC5F025A567F30098651C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		917DC5F325A567F30098651C /* GroupDataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDataDisplay.swift; sourceTree = "<group>"; };
+		917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GroupDataDisplay.intentdefinition; sourceTree = "<group>"; };
+		917DC5F625A567F40098651C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		917DC5F825A567F40098651C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C4F09D25A4653600DF335B /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		91C4F0A125A469DB00DF335B /* CoreDataDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDataSource.swift; sourceTree = "<group>"; };
 		A07C8B716119902A36F4BA8F /* LLCoreData.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLCoreData.podspec; path = ../LLCoreData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA8E80F98A8AE6F57AB82164 /* Pods_LLCoreData_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLCoreData_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98BFB336F230585969BCF7F /* Pods-LLCoreData_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLCoreData_Example.release.xcconfig"; path = "Target Support Files/Pods-LLCoreData_Example/Pods-LLCoreData_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CA1429137C57B981D2F017B5 /* Pods_GroupDataDisplayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GroupDataDisplayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD1184C3C08713ACC9C0142 /* Pods-LLCoreData_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLCoreData_Example.debug.xcconfig"; path = "Target Support Files/Pods-LLCoreData_Example/Pods-LLCoreData_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +106,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917DC5EA25A567F30098651C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917DC5F125A567F30098651C /* SwiftUI.framework in Frameworks */,
+				917DC5EF25A567F30098651C /* WidgetKit.framework in Frameworks */,
+				D954E510F4438386385FE156 /* Pods_GroupDataDisplayExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				AA8E80F98A8AE6F57AB82164 /* Pods_LLCoreData_Example.framework */,
+				917DC5EE25A567F30098651C /* WidgetKit.framework */,
+				917DC5F025A567F30098651C /* SwiftUI.framework */,
+				CA1429137C57B981D2F017B5 /* Pods_GroupDataDisplayExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,9 +133,11 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				917DC5E625A567590098651C /* LLCoreData_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LLCoreData */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				917DC5F225A567F30098651C /* GroupDataDisplay */,
 				607FACD11AFB9204008FA782 /* Products */,
 				DF773468C4844E78E556E70F /* Pods */,
 				3387E086E7DE113A09DC004A /* Frameworks */,
@@ -93,6 +149,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* LLCoreData_Example.app */,
 				607FACE51AFB9204008FA782 /* LLCoreData_Tests.xctest */,
+				917DC5ED25A567F30098651C /* GroupDataDisplayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,11 +205,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		917DC5F225A567F30098651C /* GroupDataDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				917DC5F325A567F30098651C /* GroupDataDisplay.swift */,
+				917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */,
+				917DC5F625A567F40098651C /* Assets.xcassets */,
+				917DC5F825A567F40098651C /* Info.plist */,
+			);
+			path = GroupDataDisplay;
+			sourceTree = "<group>";
+		};
 		DF773468C4844E78E556E70F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				CBD1184C3C08713ACC9C0142 /* Pods-LLCoreData_Example.debug.xcconfig */,
 				B98BFB336F230585969BCF7F /* Pods-LLCoreData_Example.release.xcconfig */,
+				27A0BB69263B89C65BCC3488 /* Pods-GroupDataDisplayExtension.debug.xcconfig */,
+				6393FF436E43D7B956EE8FBC /* Pods-GroupDataDisplayExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -169,10 +239,12 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				0EF3D73E9F39F7C1C9B1E227 /* [CP] Embed Pods Frameworks */,
+				917DC60125A567F40098651C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				917DC5FC25A567F40098651C /* PBXTargetDependency */,
 			);
 			name = LLCoreData_Example;
 			productName = LLCoreData;
@@ -197,24 +269,48 @@
 			productReference = 607FACE51AFB9204008FA782 /* LLCoreData_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		917DC5EC25A567F30098651C /* GroupDataDisplayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917DC5FE25A567F40098651C /* Build configuration list for PBXNativeTarget "GroupDataDisplayExtension" */;
+			buildPhases = (
+				2D7D1D28CAA6DCAD247E0BC6 /* [CP] Check Pods Manifest.lock */,
+				917DC5E925A567F30098651C /* Sources */,
+				917DC5EA25A567F30098651C /* Frameworks */,
+				917DC5EB25A567F30098651C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupDataDisplayExtension;
+			productName = GroupDataDisplayExtension;
+			productReference = 917DC5ED25A567F30098651C /* GroupDataDisplayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XXU9J3UXC9;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					917DC5EC25A567F30098651C = {
+						CreatedOnToolsVersion = 12.2;
+						DevelopmentTeam = XXU9J3UXC9;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -234,6 +330,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* LLCoreData_Example */,
 				607FACE41AFB9204008FA782 /* LLCoreData_Tests */,
+				917DC5EC25A567F30098651C /* GroupDataDisplayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +353,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917DC5EB25A567F30098651C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917DC5F725A567F40098651C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -275,6 +380,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLCoreData_Example/Pods-LLCoreData_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D7D1D28CAA6DCAD247E0BC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupDataDisplayExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D2076EFEA9ECC0A92F432386 /* [CP] Check Pods Manifest.lock */ = {
@@ -309,6 +436,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				91C4F0A225A469DB00DF335B /* CoreDataDataSource.swift in Sources */,
 				91C4F09E25A4653600DF335B /* Database.xcdatamodeld in Sources */,
+				917DC5FA25A567F40098651C /* GroupDataDisplay.intentdefinition in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +449,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917DC5E925A567F30098651C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917DC5F425A567F30098651C /* GroupDataDisplay.swift in Sources */,
+				917DC60525A5681A0098651C /* Database.xcdatamodeld in Sources */,
+				917DC5F925A567F40098651C /* GroupDataDisplay.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -328,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* LLCoreData_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		917DC5FC25A567F40098651C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917DC5EC25A567F30098651C /* GroupDataDisplayExtension */;
+			targetProxy = 917DC5FB25A567F40098651C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -454,7 +597,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBD1184C3C08713ACC9C0142 /* Pods-LLCoreData_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LLCoreData_Example.entitlements;
+				DEVELOPMENT_TEAM = XXU9J3UXC9;
 				INFOPLIST_FILE = LLCoreData/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -462,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -471,7 +617,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B98BFB336F230585969BCF7F /* Pods-LLCoreData_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LLCoreData_Example.entitlements;
+				DEVELOPMENT_TEAM = XXU9J3UXC9;
 				INFOPLIST_FILE = LLCoreData/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -479,7 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -522,6 +671,69 @@
 			};
 			name = Release;
 		};
+		917DC5FF25A567F40098651C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A0BB69263B89C65BCC3488 /* Pods-GroupDataDisplayExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XXU9J3UXC9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GroupDataDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLCoreData-Example.GroupDataDisplay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		917DC60025A567F40098651C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6393FF436E43D7B956EE8FBC /* Pods-GroupDataDisplayExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXU9J3UXC9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GroupDataDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.LLCoreData-Example.GroupDataDisplay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,6 +760,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917DC5FE25A567F40098651C /* Build configuration list for PBXNativeTarget "GroupDataDisplayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917DC5FF25A567F40098651C /* Debug */,
+				917DC60025A567F40098651C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

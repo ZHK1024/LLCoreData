@@ -11,12 +11,13 @@ import LLCoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        LLCoreData.registContainer(name: "Database")
+//        LLCoreData.registContainer(name: "Database", with: "group.com.lymatrix")
+        LLCoreData.registContainer(name: "Database", use: true, with: "group.com.lymatrix")
         print(NSHomeDirectory())
         return true
     }

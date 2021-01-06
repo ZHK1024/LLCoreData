@@ -6,4 +6,14 @@ target 'LLCoreData_Example' do
   
   pod 'LLCoreData', :path => '../'
 
+  
+  
 end
+
+target 'GroupDataDisplayExtension' do
+  
+  pod 'LLCoreData', :path => '../'
+  
+end
+
+
