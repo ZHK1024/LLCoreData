@@ -17,6 +17,8 @@ To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'LLCoreData', :git => 'https://github.com/ZHK1024/LLCoreData.git'
+
+pod 'LLCoreData', :git => 'https://github.com/ZHK1024/LLCoreData.git', :tag => '0.1.1'
 ```
 
 ## Author
