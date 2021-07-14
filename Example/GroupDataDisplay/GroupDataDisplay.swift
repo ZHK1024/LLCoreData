@@ -72,8 +72,18 @@ struct GroupDataDisplay: Widget {
     }
     
     init() {
-//        LLCoreData.registContainer(name: "Database", with: "group.com.lymatrix")
-        LLCoreData.registContainer(name: "Database", use: true, with: "group.com.lymatrix")
+        do {
+            if #available(iOS 13.0, *) {
+                try LLCoreData.registContainer(name: "Database",
+                                               configuration: "Cloud",
+                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
+                                               group: "group.com.lymatrix")
+            } else {
+                try LLCoreData.registContainer(name: "Database", with: "group.com.lymatrix")
+            }
+        } catch {
+            print(error)
+        }
     }
 }
 

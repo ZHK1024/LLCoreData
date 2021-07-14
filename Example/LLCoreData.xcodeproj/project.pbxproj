@@ -22,6 +22,7 @@
 		917DC5FA25A567F40098651C /* GroupDataDisplay.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */; };
 		917DC5FD25A567F40098651C /* GroupDataDisplayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 917DC5ED25A567F30098651C /* GroupDataDisplayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		917DC60525A5681A0098651C /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F09C25A4653600DF335B /* Database.xcdatamodeld */; };
+		91B067AD269D96AC00298F49 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B067AC269D96AC00298F49 /* CloudKit.framework */; };
 		91C4F09E25A4653600DF335B /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F09C25A4653600DF335B /* Database.xcdatamodeld */; };
 		91C4F0A225A469DB00DF335B /* CoreDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C4F0A125A469DB00DF335B /* CoreDataDataSource.swift */; };
 		D954E510F4438386385FE156 /* Pods_GroupDataDisplayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA1429137C57B981D2F017B5 /* Pods_GroupDataDisplayExtension.framework */; };
@@ -81,6 +82,7 @@
 		917DC5F525A567F30098651C /* GroupDataDisplay.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GroupDataDisplay.intentdefinition; sourceTree = "<group>"; };
 		917DC5F625A567F40098651C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917DC5F825A567F40098651C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B067AC269D96AC00298F49 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		91C4F09D25A4653600DF335B /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		91C4F0A125A469DB00DF335B /* CoreDataDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDataSource.swift; sourceTree = "<group>"; };
 		A07C8B716119902A36F4BA8F /* LLCoreData.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLCoreData.podspec; path = ../LLCoreData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -96,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BEEA888AA3CF69424268DB8 /* Pods_LLCoreData_Example.framework in Frameworks */,
+				91B067AD269D96AC00298F49 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +125,7 @@
 		3387E086E7DE113A09DC004A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91B067AC269D96AC00298F49 /* CloudKit.framework */,
 				AA8E80F98A8AE6F57AB82164 /* Pods_LLCoreData_Example.framework */,
 				917DC5EE25A567F30098651C /* WidgetKit.framework */,
 				917DC5F025A567F30098651C /* SwiftUI.framework */,
@@ -602,7 +606,7 @@
 				CODE_SIGN_ENTITLEMENTS = LLCoreData_Example.entitlements;
 				DEVELOPMENT_TEAM = XXU9J3UXC9;
 				INFOPLIST_FILE = LLCoreData/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -622,7 +626,7 @@
 				CODE_SIGN_ENTITLEMENTS = LLCoreData_Example.entitlements;
 				DEVELOPMENT_TEAM = XXU9J3UXC9;
 				INFOPLIST_FILE = LLCoreData/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

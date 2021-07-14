@@ -21,6 +21,8 @@ pod 'LLCoreData', :git => 'https://github.com/ZHK1024/LLCoreData.git'
 pod 'LLCoreData', :git => 'https://github.com/ZHK1024/LLCoreData.git', :tag => '0.1.1'
 ```
 
+[Setting Up Core Data with CloudKit](https://developer.apple.com/documentation/coredata/mirroring_a_core_data_store_with_cloudkit/setting_up_core_data_with_cloudkit)
+
 ## Author
 
 ZHK1024, ZHK1024@qq.com

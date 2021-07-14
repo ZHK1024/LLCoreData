@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import LLCoreData
 
-protocol CoreDataDataSourceDelegate: class {
+protocol CoreDataDataSourceDelegate: AnyObject {
     
     func tableView<T>(tableView: UITableView, configCells indexPath: IndexPath, data: T) -> UITableViewCell
 }
@@ -19,7 +19,7 @@ class CoreDataDataSource<T: Managed, NSFetchRequestResult>: NSObject, NSFetchedR
 
     private let tableView: UITableView
     
-    private let context: NSManagedObjectContext = LLCoreData.context
+    private let context: NSManagedObjectContext = LLCoreData.container.newBackgroundContext()
     
     private var fetchController: NSFetchedResultsController<T>?
     

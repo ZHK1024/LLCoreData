@@ -94,13 +94,21 @@ extension ViewController: UITableViewDelegate {
         let top = UIContextualAction(style: .normal, title: nil) { [weak self] (_, _, _) in
             self?.top(indexPath: indexPath)
         }
-        top.image = UIImage(systemName: "arrow.up")
+        if #available(iOS 13.0, *) {
+            top.image = UIImage(systemName: "arrow.up")
+        } else {
+            // Fallback on earlier versions
+        }
         top.backgroundColor = .systemYellow
         
         let delete = UIContextualAction(style: .destructive, title: nil, handler: { [weak self] (_, _, _) in
             self?.deleteItem(indexPath: indexPath)
         })
-        delete.image = UIImage(systemName: "trash")
+        if #available(iOS 13.0, *) {
+            delete.image = UIImage(systemName: "trash")
+        } else {
+            // Fallback on earlier versions
+        }
         
         return UISwipeActionsConfiguration(actions: [delete, top])
     }

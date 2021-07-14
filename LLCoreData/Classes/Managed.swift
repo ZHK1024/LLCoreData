@@ -8,7 +8,7 @@
 
 import CoreData
 
-public protocol Managed: class, NSFetchRequestResult {
+public protocol Managed: NSFetchRequestResult {
     
     static var entityName: String { get }
     
