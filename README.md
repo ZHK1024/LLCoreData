@@ -40,7 +40,7 @@ pod 'LLCoreData', :git => 'https://github.com/ZHK1024/LLCoreData.git', :tag => '
 
 ## Author
 
-ZHK1024, ZHK1024@qq.com
+ZHK1024, ZHK1024@foxmail.com
 
 ## License
 
