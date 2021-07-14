@@ -26,6 +26,7 @@ extension NSManagedObjectContext {
     
     /// 尝试保存修改 (保存失败则回滚操作)
     /// - Returns: 是否操作成功
+    @discardableResult
     public func saveOrRollback() -> Bool {
         guard hasChanges else { return true }
         do {
@@ -46,7 +47,7 @@ extension NSManagedObjectContext {
     public func performChanages(block: @escaping () -> ()) {
         perform {
             block()
-            _ = self.saveOrRollback()
+            self.saveOrRollback()
         }
     }
 }

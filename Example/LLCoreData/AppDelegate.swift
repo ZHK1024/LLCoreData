@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
                                                group: "group.com.lymatrix")
             } else {
-                try LLCoreData.registContainer(name: "Database", with: "group.com.lymatrix")
+                try LLCoreData.registContainer(name: "Database", group: "group.com.lymatrix")
+//                try LLCoreData.registContainer(name: "Database")
             }
         } catch {
             print(error)
@@ -53,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        _ = LLCoreData.saveOrRollback()
+        LLCoreData.saveOrRollback()
     }
 
 

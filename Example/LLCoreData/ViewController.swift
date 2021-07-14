@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             return
         }
         LLCoreData.context.delete(item)
-        _ = LLCoreData.saveOrRollback()
+        LLCoreData.saveOrRollback()
     }
     
     func top(indexPath: IndexPath) {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             let continent = Continent(context: context)
             continent.name = name
             continent.countries = []
-            _ = context.saveOrRollback()
+            context.saveOrRollback()
         }))
         
         present(alert, animated: true, completion: nil)

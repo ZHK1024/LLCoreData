@@ -19,7 +19,7 @@ class CoreDataDataSource<T: Managed, NSFetchRequestResult>: NSObject, NSFetchedR
 
     private let tableView: UITableView
     
-    private let context: NSManagedObjectContext = LLCoreData.container.newBackgroundContext()
+    private let context: NSManagedObjectContext = LLCoreData.context
     
     private var fetchController: NSFetchedResultsController<T>?
     

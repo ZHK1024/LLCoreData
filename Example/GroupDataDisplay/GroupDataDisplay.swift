@@ -79,7 +79,7 @@ struct GroupDataDisplay: Widget {
                                                cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
                                                group: "group.com.lymatrix")
             } else {
-                try LLCoreData.registContainer(name: "Database", with: "group.com.lymatrix")
+                try LLCoreData.registContainer(name: "Database", group: "group.com.lymatrix")
             }
         } catch {
             print(error)
