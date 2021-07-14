@@ -24,6 +24,7 @@ source 'https://github.com/ZHK1024/LLSpecs.git'
 # 如果不包含 `官方源` 当 `私有源` 库里面依赖了 `公有源` 库的第三方, 则会报错
 source 'https://github.com/CocoaPods/Specs.git'
 
+# 添加依赖
 pod 'LLCoreData', '~> 0.3.0'
 
 ```
