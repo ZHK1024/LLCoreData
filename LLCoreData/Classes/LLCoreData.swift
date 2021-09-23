@@ -55,6 +55,7 @@ open class LLCoreData: NSObject {
     /// 初始化 CoreData
     /// - Parameters:
     ///   - name: 本地 Container 名称 (.xcdatamodeld 名称)
+    ///   - configuration: `.xcdatamodeld` 文件中 `CONFIGURATION` 名称
     ///   - containerIdentifier: CloudKit Container 标识符
     ///   - identifier: AppGroup 标识符
     @available(iOS 13.0, *)
