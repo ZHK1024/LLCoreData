@@ -16,15 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//
+
         do {
-            if #available(iOS 13.0, *) {
+            if #available(iOS 13.0, *), UserDefaults.standard.bool(forKey: "sync") {
                 try LLCoreData.registContainer(name: "Database",
                                                configuration: "Cloud",
-                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
-                                               group: "group.com.lymatrix")
+                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example"/*,
+                                               group: "group.com.lymatrix"*/)
             } else {
-                try LLCoreData.registContainer(name: "Database", group: "group.com.lymatrix")
+                try LLCoreData.registContainer(name: "Database"/*, group: "group.com.lymatrix"*/)
 //                try LLCoreData.registContainer(name: "Database")
             }
         } catch {

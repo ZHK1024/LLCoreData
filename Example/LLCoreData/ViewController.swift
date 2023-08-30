@@ -28,6 +28,12 @@ class ViewController: UIViewController {
         dataSource.delegate = self
         tableView.dataSource = dataSource
         tableView.delegate = self
+        
+        // add async item
+        let switchView = UISwitch()
+        switchView.isOn = UserDefaults.standard.bool(forKey: "sync")
+        switchView.addTarget(self, action: #selector(asyncAction(switchView:)), for: .valueChanged)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: switchView)
     }
 
     func deleteItem(indexPath: IndexPath) {
@@ -61,6 +67,11 @@ class ViewController: UIViewController {
         }))
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func asyncAction(switchView: UISwitch) {
+        UserDefaults.standard.set(switchView.isOn, forKey: "sync")
+        UserDefaults.standard.synchronize()
     }
 }
 
