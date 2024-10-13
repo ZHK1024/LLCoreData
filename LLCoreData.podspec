@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   
   s.swift_version = "5.0"
 
-  s.source_files = 'LLCoreData/Classes/**/*'
+  s.source_files = 'Source/LLCoreData/**/*'
   
   # s.resource_bundles = {
   #   'LLCoreData' => ['LLCoreData/Assets/*.png']
