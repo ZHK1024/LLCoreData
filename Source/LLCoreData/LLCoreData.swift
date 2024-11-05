@@ -26,6 +26,12 @@ open class LLCoreData: NSObject {
         shared.persistentContainer
     }
     
+    /// CloudKit 的 Container, 用来获取 CoreData 在 CloudKit 中的容器
+    /// 方便获取 CoreData 记录对应的 CKRecord 对象
+    public static var cloudContainer: NSPersistentCloudKitContainer? {
+        shared.persistentContainer as? NSPersistentCloudKitContainer
+    }
+    
     /// 初始化 CoreData
     /// - Parameter name: Container 名称
     
@@ -85,7 +91,11 @@ open class LLCoreData: NSObject {
         })
         /// 主动把本地的 Model 同步到远程服务器
         /// 如果不调用的话, 在首次创建对应 Model 实例并同步成功才会把 Model 同步到远端服务器
+        /// 只在测试时候使用. 在正式环境中不要调用
+        /// 正式环境的 Schema 由手动去 CloudKit Dashboard 中同步到正式服务器
+#if DEBUG
 //        try container.initializeCloudKitSchema(options: [.printSchema])
+#endif
         
         /// `viewContext` 需要在 `loadPersistentStores` 之后调用
         /// 设置数据合并方式
