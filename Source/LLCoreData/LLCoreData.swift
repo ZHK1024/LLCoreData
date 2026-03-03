@@ -229,9 +229,15 @@ extension LLCoreData {
         }
         
         /// 拼接 LLCoreData 文件夹路径
-        containerURL.appendPathComponent("/Library/LLCoreData")
+        containerURL.appendPathComponent("Library/LLCoreData")
         /// 如果文件夹不存在, 则创建 LLCoreData 文件夹
-        if FileManager.default.fileExists(atPath: containerURL.absoluteString) == false {
+        let containerPath: String
+        if #available(iOS 16.0, *) {
+            containerPath = containerURL.path()
+        } else {
+            containerPath = containerURL.path
+        }
+        if FileManager.default.fileExists(atPath: containerPath) == false {
             try FileManager.default.createDirectory(at: containerURL, withIntermediateDirectories: true, attributes: [:])
         }
         if shared {
