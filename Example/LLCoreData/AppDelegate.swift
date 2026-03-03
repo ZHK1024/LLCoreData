@@ -18,14 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         do {
-            if #available(iOS 13.0, *), UserDefaults.standard.bool(forKey: "sync") {
+            if UserDefaults.standard.bool(forKey: "sync") {
+                // 开启 CloudKit 同步：传入 useCloudKit: true 及对应的 containerIdentifier
                 try LLCoreData.registContainer(name: "Database",
                                                configuration: "Cloud",
-                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example"/*,
-                                               group: "group.com.lymatrix"*/)
+                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
+                                               /*group: "group.com.lymatrix",*/
+                                               useCloudKit: true)
             } else {
-                try LLCoreData.registContainer(name: "Database"/*, group: "group.com.lymatrix"*/)
-//                try LLCoreData.registContainer(name: "Database")
+                // 不使用 CloudKit：useCloudKit 默认 false，纯本地存储
+                try LLCoreData.registContainer(name: "Database" /*, group: "group.com.lymatrix"*/)
             }
         } catch {
             print(error)

@@ -73,14 +73,12 @@ struct GroupDataDisplay: Widget {
     
     init() {
         do {
-            if #available(iOS 13.0, *) {
-                try LLCoreData.registContainer(name: "Database",
-                                               configuration: "Cloud",
-                                               cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
-                                               group: "group.com.lymatrix")
-            } else {
-                try LLCoreData.registContainer(name: "Database", group: "group.com.lymatrix")
-            }
+            // Widget 始终使用 AppGroup 路径共享数据库；根据需要决定是否开启 CloudKit 同步
+            try LLCoreData.registContainer(name: "Database",
+                                           configuration: "Cloud",
+                                           cloud: "iCloud.org.cocoapods.demo.LLCoreData-Example",
+                                           group: "group.com.lymatrix",
+                                           useCloudKit: true)
         } catch {
             print(error)
         }
